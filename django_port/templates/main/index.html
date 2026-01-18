@@ -3,118 +3,173 @@
 {% block content %}
 <!-- Hero Section -->
 <section class="hero">
-    <div class="hero-content">
-        <h1>Yash Bhosale</h1>
-        <p>Cybersecurity | Ethical Hacker | Python Developer</p>
-        <div class="hero-cta">
-            <a href="https://github.com/yashbhosale2403" class="btn" target="_blank"><i class="fab fa-github"></i>
-                GitHub</a>
-            <a href="https://www.linkedin.com/in/yashq" class="btn" target="_blank"><i class="fab fa-linkedin"></i>
-                LinkedIn</a>
-            <a href="https://tryhackme.com/p/yashbhosale2403" class="btn" target="_blank"><i class="fas fa-bug"></i>
-                TryHackMe</a>
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <h1 class="reveal">Cybersecurity Analyst <br> & <span class="highlight-text">Ethical Hacker</span></h1>
+            <p class="reveal stagger-1">I help organizations secure their digital infrastructure through vulnerability
+                assessment, pentesting,
+                and automated security tooling.</p>
+            <div class="social-buttons reveal stagger-2">
+                <a href="https://github.com/yashbhosale2403" class="btn btn-primary" target="_blank"><i
+                        class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/yashq" class="btn btn-outline" target="_blank"><i
+                        class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://tryhackme.com/p/yashbhosale2403" class="btn btn-outline" target="_blank"><i
+                        class="fas fa-bug"></i> TryHackMe</a>
+            </div>
+        </div>
+        <div class="profile-card reveal stagger-2">
+            <div class="stat-row">
+                <div class="stat-item">
+                    <h3>Top 5%</h3>
+                    <p>TryHackMe Rank</p>
+                </div>
+                <div class="stat-item" style="text-align: right;">
+                    <h3>4+</h3>
+                    <p>Certifications</p>
+                </div>
+            </div>
+            <div class="stat-row" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+                <div class="stat-item">
+                    <h3>3+</h3>
+                    <p>Major Projects</p>
+                </div>
+                <div class="stat-item" style="text-align: right;">
+                    <h3>10+</h3>
+                    <p>Tools Used</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- About Section -->
-<section class="container" style="padding: 4rem 0;">
-    <h2 class="section-title">About Me</h2>
-    <p class="about-text">
-        I’m Yash Bhosale, an intermediate cybersecurity learner focused on Bug Bounty, Web Pentesting, and Python-based
-        security tooling.
-        I enjoy finding vulnerabilities, understanding attack surfaces, and building automation scripts that improve
-        recon and testing workflows.
-    </p>
-    <div style="text-align: center; margin-top: 2rem;">
-        <p class="about-text" style="font-size: 1rem; color: #a0a0a0;">
-            <strong>Focus:</strong> Bug Bounty & Web Application Security • Recon and automation • OWASP Top 10 • Python
-            security tools • Kali Linux
-        </p>
+<section class="section">
+    <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="card reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                I’m Yash Bhosale, an intermediate cybersecurity learner focused on Bug Bounty, Web Pentesting, and
+                Python-based security tooling.
+                I enjoy finding vulnerabilities, understanding attack surfaces, and building automation scripts that
+                improve recon and testing workflows.
+            </p>
+            <div class="tags" style="justify-content: center;">
+                <span class="tag">Bug Bounty</span>
+                <span class="tag">Web Security</span>
+                <span class="tag">Automation</span>
+                <span class="tag">OWASP Top 10</span>
+                <span class="tag">Kali Linux</span>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Skills Section -->
-<section class="container" style="padding: 4rem 0;">
-    <h2 class="section-title">Skills & Tech Stack</h2>
-    <div class="grid-container">
-        <!-- Programming -->
-        <div class="card">
-            <h3><i class="fas fa-code"></i> Programming</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">Python (Primary)</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Bash</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">SQL</span>
+<section class="section" style="background-color: white;">
+    <div class="container">
+        <h2 class="section-title reveal">Technical Skills</h2>
+        <div class="grid-cols-2">
+            <!-- Programming -->
+            <div class="card reveal stagger-1">
+                <div class="card-icon"><i class="fas fa-code"></i></div>
+                <h3>Programming</h3>
+                <p>Python (Primary), Java, Bash, JavaScript, SQL</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">JS</span>
+                </div>
             </div>
-        </div>
-        <!-- Web Dev -->
-        <div class="card">
-            <h3><i class="fas fa-globe"></i> Web Dev</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">Django</span>
-                <span class="skill-tag">Flask</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">HTML/CSS</span>
-                <span class="skill-tag">Bootstrap</span>
-                <span class="skill-tag">Tailwind</span>
+            <!-- Security Tools -->
+            <div class="card reveal stagger-2">
+                <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Security Tools</h3>
+                <p>Burp Suite, OWASP ZAP, Nmap, Metasploit, Hydra, Wireshark</p>
+                <div class="tags">
+                    <span class="tag">Burp</span>
+                    <span class="tag">Nmap</span>
+                    <span class="tag">Metasploit</span>
+                </div>
             </div>
-        </div>
-        <!-- Security Tools -->
-        <div class="card">
-            <h3><i class="fas fa-shield-alt"></i> Security Tools</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">Nmap</span>
-                <span class="skill-tag">Burp Suite</span>
-                <span class="skill-tag">Wireshark</span>
-                <span class="skill-tag">Metasploit</span>
-                <span class="skill-tag">Hydra</span>
-                <span class="skill-tag">Nikto</span>
-                <span class="skill-tag">Nessus</span>
+            <!-- Web Dev -->
+            <div class="card reveal stagger-3">
+                <div class="card-icon"><i class="fas fa-globe"></i></div>
+                <h3>Web Development</h3>
+                <p>Django, Flask, React, HTML, CSS, Bootstrap, Tailwind</p>
+                <div class="tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">React</span>
+                </div>
             </div>
-        </div>
-        <!-- DevOps -->
-        <div class="card">
-            <h3><i class="fas fa-server"></i> DevOps/Cloud</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">GCP</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">GitHub</span>
+            <!-- Cloud/DevOps -->
+            <div class="card reveal stagger-4">
+                <div class="card-icon"><i class="fas fa-server"></i></div>
+                <h3>Cloud & DevOps</h3>
+                <p>Docker, AWS, GCP, Git, GitHub</p>
+                <div class="tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Git</span>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Certifications Section -->
-<section class="container" style="padding: 4rem 0;">
-    <h2 class="section-title">Certifications</h2>
-    <div class="grid-container">
-        <div class="card">
-            <h3><i class="fas fa-certificate"></i> CCNA</h3>
-            <p>Cisco Certified Network Associate</p>
-        </div>
-        <div class="card">
-            <h3><i class="fas fa-shield-virus"></i> Security+</h3>
-            <p>CompTIA Security+</p>
-        </div>
-        <div class="card">
-            <h3><i class="fab fa-google"></i> Google Cyber</h3>
-            <p>Google Cybersecurity Professional Certificate</p>
+<!-- Resume Highlights -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title reveal">Resume Highlights</h2>
+        <div class="card reveal" style="text-align: center; max-width: 800px; margin: 0 auto; padding: 3rem;">
+            <p style="font-size: 1.25rem; font-weight: 500; margin-bottom: 2rem;">
+                CCNA & CompTIA Security+ certified professional with a strong foundation in network security and
+                automation.
+                Winner of multiple CTF competitions.
+            </p>
+            <div class="grid-cols-3" style="margin-bottom: 2.5rem; gap: 1rem;">
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px;">
+                    <i class="fas fa-graduation-cap"
+                        style="color: var(--accent-color); font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                    <p style="margin: 0; font-weight: 600;">I²IT Pune Student</p>
+                </div>
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px;">
+                    <i class="fas fa-certificate"
+                        style="color: var(--accent-color); font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                    <p style="margin: 0; font-weight: 600;">Security+</p>
+                </div>
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px;">
+                    <i class="fas fa-trophy"
+                        style="color: var(--accent-color); font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                    <p style="margin: 0; font-weight: 600;">CTF Winner</p>
+                </div>
+            </div>
+            <a href="{% url 'resume' %}" class="btn btn-primary">View Full Resume</a>
         </div>
     </div>
 </section>
 
-<!-- Practice Section -->
-<section class="container" style="padding: 4rem 0;">
-    <h2 class="section-title">Practice Platforms</h2>
-    <div class="card" style="text-align: center;">
-        <h3 style="font-size: 2rem; color: var(--accent-neon); margin-bottom: 0.5rem;">Top 5% Worldwide</h3>
-        <p>Ranked on TryHackMe</p>
-        <a href="https://tryhackme.com/p/yashbhosale2403" class="btn" target="_blank">View Profile</a>
+<!-- Certifications (Timeline Style) -->
+<section class="section" style="background-color: white;">
+    <div class="container">
+        <h2 class="section-title reveal">Certifications</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal stagger-1">
+                <span class="timeline-date">Cisco</span>
+                <h3>CCNA</h3>
+                <p>Cisco Certified Network Associate</p>
+            </div>
+            <div class="timeline-item reveal stagger-2">
+                <span class="timeline-date">CompTIA</span>
+                <h3>Security+</h3>
+                <p>CompTIA Security+</p>
+            </div>
+            <div class="timeline-item reveal stagger-3">
+                <span class="timeline-date">Google</span>
+                <h3>Google Cybersecurity</h3>
+                <p>Professional Certificate</p>
+            </div>
+        </div>
     </div>
 </section>
-
 {% endblock %}

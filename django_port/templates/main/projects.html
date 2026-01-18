@@ -3,37 +3,59 @@
 {% block title %}Projects | Yash Bhosale{% endblock %}
 
 {% block content %}
-<div class="page-header">
+<div class="section">
     <div class="container">
-        <h1>Projects</h1>
-        <p style="color: var(--text-secondary); margin-top: 1rem;">Showcasing my security tools and development work.
-        </p>
+        <h1 class="section-title reveal">Projects</h1>
+
+        <div class="grid-cols-2">
+            <!-- Project 1 -->
+            <div class="card reveal stagger-1">
+                <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                <h3>Agri Mitra (Smart India Hackathon)</h3>
+                <p>IoT-based soil moisture monitoring system + mobile app for farmers; real-time data + recommendations.
+                </p>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">IoT</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">App Dev</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card reveal stagger-2">
+                <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>LIFI (Light Fidelity)</h3>
+                <p>Led 5-person team demonstrating light-based data transmission; presented at university conference.
+                </p>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">Research</span>
+                    <span class="tag">Hardware</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card reveal stagger-3">
+                <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Website Development</h3>
+                <p>Responsive website using HTML5/CSS3/JS/Django/Bootstrap with MySQL backend.</p>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">Django</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </div>
+
+            <!-- Project 4 (Example Placeholder) -->
+            <div class="card reveal stagger-4">
+                <div class="card-icon"><i class="fas fa-bug"></i></div>
+                <h3>XSS Scanner</h3>
+                <p>Automated tool to detect Cross-Site Scripting vulnerabilities in web applications.</p>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">Python</span>
+                    <span class="tag">Security</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<section class="container" style="padding-bottom: 4rem;">
-    <div class="grid-container">
-        <!-- Project 1 -->
-        <div class="card">
-            <h3><i class="fab fa-python"></i> XSS-Reflected-Scanner</h3>
-            <p>A Python-based tool to automatically detect reflected Cross-Site Scripting vulnerabilities in web
-                applications using payload injection.</p>
-            <a href="https://github.com/yashbhosale2403" class="btn" target="_blank">View Code</a>
-        </div>
-        <!-- Project 2 -->
-        <div class="card">
-            <h3><i class="fas fa-robot"></i> Recon Automation Toolkit</h3>
-            <p>An automated reconnaissance suite utilizing Python and Bash scripts to streamline subdomain enumeration
-                and port scanning.</p>
-            <a href="https://github.com/yashbhosale2403" class="btn" target="_blank">View Code</a>
-        </div>
-        <!-- Project 3 -->
-        <div class="card">
-            <h3><i class="fas fa-book-dead"></i> Web Pentesting Notes Hub</h3>
-            <p>A centralized repository of web penetration testing methodologies, checklists, and common vulnerability
-                references.</p>
-            <a href="https://github.com/yashbhosale2403" class="btn" target="_blank">View Code</a>
-        </div>
-    </div>
-</section>
 {% endblock %}

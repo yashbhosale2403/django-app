@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -27,7 +27,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="{% url 'home' %}" class="logo">&lt;YASH_BHOSALE /&gt;</a>
+            <a href="{% url 'home' %}" class="logo">&lt;<span>YASH_BHOSALE</span> /&gt;</a>
             <ul class="nav-links">
                 <li><a href="{% url 'home' %}"
                         class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
@@ -35,10 +35,19 @@
                 <li><a href="{% url 'projects' %}"
                         class="nav-link {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
                 </li>
+                <li><a href="{% url 'resume' %}"
+                        class="nav-link {% if request.resolver_match.url_name == 'resume' %}active{% endif %}">Resume</a>
+                </li>
                 <li><a href="{% url 'contact' %}"
                         class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
                 </li>
+                <li><a href="{% url 'resume' %}" class="btn btn-cta">Resume</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </nav>
 
@@ -49,19 +58,23 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/yashbhosale2403" class="social-icon" target="_blank"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/yashq" class="social-icon" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="mailto:yashbhosale2403@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <div class="footer-logo">&lt;<span>YASH_BHOSALE</span> /&gt;</div>
+            <div class="footer-links">
+                <a href="https://github.com/yashbhosale2403" class="nav-link" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yashq" class="nav-link" target="_blank">LinkedIn</a>
+                <a href="https://tryhackme.com/p/yashbhosale2403" class="nav-link" target="_blank">TryHackMe</a>
+                <a href="mailto:yashbhosale2403@gmail.com" class="nav-link">Email</a>
             </div>
-            <p>&copy; 2026 Yash Bhosale. All rights reserved.</p>
+            <p class="copyright">
+                &copy; {% now "Y" %} Yash Bhosale. Built with Django & Render.
+            </p>
         </div>
     </footer>
 
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/animations.js' %}"></script>
 </body>
 
 </html>

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Resume | Yash Bhosale{% endblock %}
+
+{% block content %}
+<div class="section" style="background: white;">
+    <div class="container">
+        <h1 class="section-title reveal">Resume</h1>
+        <div style="text-align: center; margin-bottom: 3rem;" class="reveal stagger-1">
+            <a href="mailto:yashbhosale2403@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email
+                Me</a>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="card reveal" style="margin-bottom: 2rem;">
+            <h3>Professional Summary</h3>
+            <p>
+                I’m Yash Bhosale, a CCNA & CompTIA Security+ certified cybersecurity professional and Python/Django
+                developer skilled in network security, web pentesting, threat intelligence, and incident response. I
+                enjoy working on OWASP Top 10 vulnerabilities, automation scripting, and CTF challenges. I’m seeking
+                opportunities in threat intelligence, security engineering, SOC/Blue Team, or cybersecurity consulting.
+            </p>
+        </div>
+
+        <!-- Education -->
+        <h3 style="margin: 2rem 0 1rem;" class="reveal">Education</h3>
+        <div class="grid-cols-2">
+            <div class="card reveal stagger-1">
+                <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>International Institute of Information Technology (I²IT), Pune</h3>
+                <p>B.E. in Information Technology</p>
+            </div>
+            <div class="card reveal stagger-2">
+                <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Craw Security</h3>
+                <p>Diploma in Cyber Security (Online)</p>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <h3 style="margin: 3rem 0 1rem;" class="reveal">Achievements & Leadership</h3>
+        <div class="card reveal">
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                    <i class="fas fa-trophy" style="color: var(--accent-color);"></i>
+                    Top 5% hackers worldwide on TryHackMe (Global Rank: 67,600 | India Rank: 6,643)
+                </li>
+                <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                    <i class="fas fa-crown" style="color: var(--accent-color);"></i>
+                    Founder & CEO of Tapeflicker (budget-friendly online learning platform)
+                </li>
+                <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                    <i class="fas fa-medal" style="color: var(--accent-color);"></i>
+                    Ranked 10th out of 25 teams in SCIT CTF Competition 2025
+                </li>
+                <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                    <i class="fas fa-users" style="color: var(--accent-color);"></i>
+                    Tech Lead, IT Branch — Cybersecurity CV Club, I²IT Pune
+                </li>
+            </ul>
+        </div>
+
+        <!-- Technical Skills -->
+        <h3 style="margin: 3rem 0 1rem;" class="reveal">Technical Skills</h3>
+        <div class="grid-cols-2">
+            <div class="card reveal stagger-1">
+                <h3>Cybersecurity</h3>
+                <p>OWASP Top 10, Bug Bounty methodology, Recon, Vulnerability Assessment</p>
+            </div>
+            <div class="card reveal stagger-2">
+                <h3>Tools</h3>
+                <p>Burp Suite, OWASP ZAP, Nmap</p>
+            </div>
+            <div class="card reveal stagger-3">
+                <h3>SIEM</h3>
+                <p>Alert investigation, false positive/negative analysis, reporting/auditing</p>
+            </div>
+            <div class="card reveal stagger-4">
+                <h3>Development</h3>
+                <div class="tags" style="margin-top: 1rem;">
+                    <span class="tag">Python</span>
+                    <span class="tag">Django</span>
+                    <span class="tag">HTML5/CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Git/GitHub</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
