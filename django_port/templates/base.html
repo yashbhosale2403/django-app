@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Yash Bhosale | Cybersecurity Profile{% endblock %}</title>
+    <meta name="description" content="Cybersecurity portfolio of Yash Bhosale - Ethical Hacker, Python Developer.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="{% url 'home' %}" class="logo">&lt;YASH_BHOSALE /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}"
+                        class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+                </li>
+                <li><a href="{% url 'projects' %}"
+                        class="nav-link {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
+                </li>
+                <li><a href="{% url 'contact' %}"
+                        class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/yashbhosale2403" class="social-icon" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yashq" class="social-icon" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:yashbhosale2403@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Yash Bhosale. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

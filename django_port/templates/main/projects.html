@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects | Yash Bhosale{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="container">
+        <h1>Projects</h1>
+        <p style="color: var(--text-secondary); margin-top: 1rem;">Showcasing my security tools and development work.
+        </p>
+    </div>
+</div>
+
+<section class="container" style="padding-bottom: 4rem;">
+    <div class="grid-container">
+        <!-- Project 1 -->
+        <div class="card">
+            <h3><i class="fab fa-python"></i> XSS-Reflected-Scanner</h3>
+            <p>A Python-based tool to automatically detect reflected Cross-Site Scripting vulnerabilities in web
+                applications using payload injection.</p>
+            <a href="https://github.com/yashbhosale2403" class="btn" target="_blank">View Code</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="card">
+            <h3><i class="fas fa-robot"></i> Recon Automation Toolkit</h3>
+            <p>An automated reconnaissance suite utilizing Python and Bash scripts to streamline subdomain enumeration
+                and port scanning.</p>
+            <a href="https://github.com/yashbhosale2403" class="btn" target="_blank">View Code</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="card">
+            <h3><i class="fas fa-book-dead"></i> Web Pentesting Notes Hub</h3>
+            <p>A centralized repository of web penetration testing methodologies, checklists, and common vulnerability
+                references.</p>
+            <a href="https://github.com/yashbhosale2403" class="btn" target="_blank">View Code</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

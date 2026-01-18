@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact | Yash Bhosale{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <p style="color: var(--text-secondary); margin-top: 1rem;">Have a question or want to collaborate?</p>
+    </div>
+</div>
+
+<section class="container" style="padding-bottom: 4rem; text-align: center;">
+    <div class="card" style="max-width: 600px; margin: 0 auto;">
+        <h3 style="margin-bottom: 2rem;">Contact Information</h3>
+
+        <div style="margin-bottom: 1.5rem;">
+            <i class="fas fa-envelope" style="font-size: 2rem; color: var(--accent-neon); margin-bottom: 0.5rem;"></i>
+            <p><a href="mailto:yashbhosale2403@gmail.com"
+                    style="color: var(--text-primary); font-size: 1.2rem;">yashbhosale2403@gmail.com</a></p>
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <a href="mailto:yashbhosale2403@gmail.com" class="btn">Send Email</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
