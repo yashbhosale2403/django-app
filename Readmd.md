@@ -1,0 +1,1 @@
+this is deployed app link : https://django-app-jseh.onrender.com
