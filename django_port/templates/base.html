@@ -41,6 +41,11 @@
                 <li><a href="{% url 'contact' %}"
                         class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
                 </li>
+                <li class="theme-toggle-item" style="display: flex; align-items: center;">
+                    <button id="theme-toggle" class="btn btn-outline" style="padding: 0; width: 40px; height: 40px; border-radius: 50%; opacity: 0.8; transition: opacity 0.3s; display: flex; align-items: center; justify-content: center; outline: none;" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
                 <li><a href="{% url 'resume' %}" class="btn btn-cta">Resume</a></li>
             </ul>
             <div class="burger">
